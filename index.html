@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>My Blog</title>
+  </head>
+  <body>
+    <div class="login">
+      <div class="icon flexCenter">
+        <i class="fa fa-camera" aria-hidden="true"></i>
+      </div>
+      <div class="blogName">
+        <h1 class="text-center">Blog Name</h1>
+      </div>
+      <div class="login-form flex">
+      <div class="signup flex justify" id="SignUp">
+            <form action="" method="post">
+                <div class="email inp">
+                <input required type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="username inp">
+                <input required type="text" name="username" id="username" placeholder="Username">
+            </div>
+            <div class="password inp">
+                <input required type="password" name="password" id="password2" placeholder="Password">
+                <span class="eye flexCenter">
+                  <a id="eye2" onclick="toggle(this)"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+                </span>
+            </div>
+            <div class="confirm-password password inp">
+                <input required type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password">
+            </div>
+                <button type="submit" class="btn btn-yellow">Subscribe</button>
+                <div class="sign-up-now flex justify">
+                    <span class="member">Already Signup</span>
+                    <a id="LoginNow"
+                      >Login now
+                      <span><i class="fa fa-caret-up" aria-hidden="true"></i></span
+                    ></a>
+                  </div>
+            </form> 
+        </div>
+      <div class="signin flex justify" id=SignIn>
+        <form action="" method="post" class="flex justify">
+          <div class="username inp">
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Username" required
+            />
+          </div>
+          <div class="password inp">
+            <input
+              type="password"
+              name="password"
+              id="password1"
+              placeholder="Password" required
+            />
+            <span class="eye flexCenter">
+              <a  id="eye1" onclick="toggle(this.id)"><i class="fa fa-eye-slash" aria-hidden="true"></i></a>
+            </span>
+          </div>
+          <button type="submit" class="btn btn-yellow">Login</button>
+          <div class="sign-up-now flex justify">
+            <span class="member">Not a member?</span>
+            <a id="signUpNow"
+              >Sign up now
+              <span><i class="fa fa-caret-up" aria-hidden="true"></i></span
+            ></a>
+          </div>
+          <div id="socialMedia" class="flex">
+            <div class="social">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </div>
+            <div class="social">
+              <i class="fa fa-google" aria-hidden="true"></i>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
